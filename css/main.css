@@ -1,0 +1,101 @@
+#search {
+  width: 500px;
+  height: 80px;
+  padding: 30px;
+  border: none;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 32px;
+  color: var(--color-font-b);
+}
+#searchBox {
+  text-align: center;
+  position: fixed;
+  border: 6px solid var(--color-font);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+.menu_list {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+.menu{
+  background-color: var(--color-font);
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+  margin: 0;
+  height: 50px;
+  border-radius: 10px;
+  line-height: 50px;
+  text-decoration: none;
+}
+body {
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#container {
+  height: auto;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0 30px 0;
+  font-size: 1.5em;
+}
+.content_box {
+  border-radius: 10px;
+  width: 500px;
+  background-color: var(--color-main);
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#pure_menu {
+  color: #fda701;
+}
+#pure_menu:focus {
+  background-color: black;
+}
+#action_menu {
+  color: #0e4d7e;
+  
+}
+#conflict_menu {
+  color: #f12b1d;
+}
+#case_law_menu {
+  color: #6cbcbe;
+}
+.pure {
+  box-shadow: 8px 8px 2px 1px rgba(253, 167, 1, .8);
+}
+.action {
+  box-shadow: 8px 8px 2px 1px rgba(14, 77, 126, .8);
+}
+.conflict {
+  box-shadow: 8px 8px 2px 1px rgba(241, 43, 29, .8);
+}
+.content_box * {
+  padding: 20px 0;
+  border-radius: 10px;
+}
+.question {
+  font-weight: 600;
+}
+.answer {
+  font-size: 1em;
+  font-weight: 400;
+}
+.law {
+  font-size: 0.8em;
+  font-weight: 400;
+  text-decoration: none;
+  color: pink;
+}
+.next_quest {
+  display: none;
+}

@@ -1,0 +1,21 @@
+:root {
+  --color-main: #0a50a0;
+  --color-main-green: #028737;
+  --color-main-red: #FF0000;
+  --color-sub: #e5f5ff;
+  --color-font: #4783d0;
+  --color-font-b: #4a4a4a;
+  --color-tomato: #ff6347;
+  --color-teal: #008080;
+  --color-burlywood: #deb887;
+  --color-thistle: #d7bfd7;
+}
+* {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+body {
+  background-color: white;
+}
