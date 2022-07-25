@@ -1,7 +1,7 @@
 :root {
   --color-main: #0a50a0;
   --color-main-green: #028737;
-  --color-main-red: #FF0000;
+  --color-main-red: #ff0000;
   --color-sub: #e5f5ff;
   --color-font: #4783d0;
   --color-font-b: #4a4a4a;
@@ -11,11 +11,16 @@
   --color-thistle: #d7bfd7;
 }
 * {
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 0;
-  color: white;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--color-main);
+}
+html {
+  font-size: 16px;
 }
 body {
-  background-color: white;
+  /* background-color: var(--color-sub); */
+  margin: 0;
+  padding: 0;
 }
