@@ -1,63 +1,64 @@
-#search {
-  box-sizing: border-box;
-  width: 100%;
-  height: 80px;
-  border: none;
-  background-color: white;
-  font-size: 1.5rem;
-  color: var(--color-main);
-}
-#searchBox {
-  box-sizing: border-box;
-  width: 100%;
-  text-align: center;
-  position: fixed;
-  border: 3px solid var(--color-main);
-  border-radius: 0 0 10px 10px;
-}
-.menu_list {
-  margin-top: 100px;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-}
-.menu {
-  padding: 1vw 0;
-  background-color: var(--color-main);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 23%;
-  margin: 0;
-  height: 30px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.8rem;
-}
 body {
   font-weight: 600;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#container {
-  height: auto;
-  width: 95%;
+#search-box {
+  height: 120px;
+  background-color: var(--color-main);
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: 30px 0 30px 0;
 }
-.content_box {
-  border-radius: 10px;
-  width: 95%;
-  /* background-color: var(--color-main); */
-  margin-bottom: 20px;
-  padding: 20px;
+#search-box span {
+  position: absolute;
+  top: 40px;
+  color: white;
+}
+#search {
   box-sizing: border-box;
+  position: absolute;
+  bottom: -25px;
+  padding: 20px;
+  border-radius: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.1);
 }
-#pure_menu {
+#search::placeholder {
+  color: var(--color-main);
+  font-weight: 600;
+}
+.menu_list {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.hide {
+  display: none;
+}
+.menu {
+  padding: 1vw 0;
+  /* background-color: var(--color-main); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23%;
+  height: 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.changed-bg {
+  background-color: var(--color-main);
+  color: white;
+}
+/* #pure_menu {
   color: #fda701;
 }
 #action_menu {
@@ -67,8 +68,24 @@ body {
   color: #f12b1d;
 }
 #case_law_menu {
-  /* color: #0e4d7e; */
+  color: #0e4d7e;
   color: var(--color-sub);
+} */
+#container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.content_box {
+  /* border-radius: 10px; */
+  width: 100%;
+  /* background-color: var(--color-main); */
+  /* margin-bottom: 20px; */
+  padding: 20px;
+  box-sizing: border-box;
 }
 .pure {
   box-shadow: 0px 0px 15px -5px #fda701 inset;
@@ -92,12 +109,13 @@ body {
 .answer {
   font-size: 1rem;
   font-weight: 400;
+  color: var(--color-font);
 }
 .law {
   font-size: 0.8rem;
   font-weight: 400;
   text-decoration: none;
-  color: pink;
+  color: #999999;
 }
 .next_quest {
   display: none;
