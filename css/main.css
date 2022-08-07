@@ -4,7 +4,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 #search-box {
   height: 120px;
   background-color: var(--color-main);
@@ -14,11 +13,14 @@ body {
   display: flex;
   justify-content: center;
 }
-#search-box span {
+.top-bar__title {
   position: absolute;
-  top: 40px;
+  top: 35px;
   color: white;
+  text-decoration: none;
+  font-size: 1.5em;
 }
+
 #search {
   box-sizing: border-box;
   position: absolute;
