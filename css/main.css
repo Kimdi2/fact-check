@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 #search-box {
   height: 120px;
   background-color: var(--color-main);
@@ -39,12 +40,9 @@ body {
   display: flex;
   justify-content: space-around;
 }
-.hide {
-  display: none;
-}
 .menu {
   padding: 1vw 0;
-  /* background-color: var(--color-main); */
+  background-color: var(--color-main);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,11 +52,7 @@ body {
   text-decoration: none;
   font-size: 0.8rem;
 }
-.changed-bg {
-  background-color: var(--color-main);
-  color: white;
-}
-/* #pure_menu {
+#pure_menu {
   color: #fda701;
 }
 #action_menu {
@@ -68,9 +62,9 @@ body {
   color: #f12b1d;
 }
 #case_law_menu {
-  color: #0e4d7e;
+  /* color: #0e4d7e; */
   color: var(--color-sub);
-} */
+}
 #container {
   height: auto;
   width: 100%;
@@ -111,6 +105,10 @@ body {
   font-weight: 400;
   color: var(--color-font);
 }
+.answer img {
+  display: block;
+  margin: 0 auto;
+}
 .law {
   font-size: 0.8rem;
   font-weight: 400;
@@ -119,4 +117,7 @@ body {
 }
 .next_quest {
   display: none;
+}
+.show {
+  display: block;
 }
