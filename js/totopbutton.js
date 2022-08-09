@@ -16,5 +16,6 @@ function moveToTop() {
   // document.documentElement.scrollTop = 0;
 }
 
+scrollFunction();
 window.onscroll = () => scrollFunction();
 toTopBtn.addEventListener("click", moveToTop);
