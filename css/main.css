@@ -54,6 +54,9 @@ body {
   text-decoration: none;
   font-size: 0.8rem;
 }
+.menu:hover {
+  box-shadow: 0px 10px 10px -5px #999999;
+}
 #pure_menu {
   color: #fda701;
 }
@@ -120,7 +123,13 @@ body {
   text-decoration: none;
   color: #999999;
 }
+.law i {
+  color: #999999;
+}
 .next_quest {
+  display: none;
+}
+.hide {
   display: none;
 }
 .show {
