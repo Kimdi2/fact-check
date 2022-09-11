@@ -27,15 +27,18 @@ function checkbox_function() {
   }
 }
 
+function is_checked() {
+  const iCheck = $(this).parent().children("i");
+  iCheck.toggle(500);
+  const menu = $(this).parent()[0];
+  if (menu.classList.contains("menu__checked")) {
+    menu.classList.remove("menu__checked");
+  } else {
+    menu.classList.add("menu__checked");
+  }
+}
+
+// $(".menu").on("click", is_checked);
+$("input[type='checkbox']").on("click", is_checked);
 $("input[type='checkbox']").on("click", checkbox_function);
 $("input[type='checkbox']").on("click", searcher);
-
-// function is_checked() {
-//   const checkbox_checked = $("input[type='checkbox']");
-//   const is_checked = checkbox_checked.checked;
-//   const is_checked = $(this).prop("checked");
-//   if (is_checked) {
-//     console.log($(this), is_checked);
-//   }
-// }
-// $("input[type='checkbox']").on("click", is_checked);
