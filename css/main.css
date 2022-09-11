@@ -53,22 +53,67 @@ body {
   border-radius: 5px;
   text-decoration: none;
   font-size: 0.8rem;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-.menu:hover {
-  box-shadow: 0px 10px 10px -5px #999999;
+.menu__checked {
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 15px 30px -12px inset,
+    rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
 }
-#pure_menu {
+.menu input {
+  display: none;
+}
+.menu i {
+  font-size: 30px;
+  position: absolute;
+  left: 10px;
+  top: -12px;
+}
+#pure_menu,
+#pure_menu i {
   color: #fda701;
 }
-#action_menu {
+#action_menu,
+#action_menu i {
   color: #6cbcbe;
 }
-#conflict_menu {
+#conflict_menu,
+#conflict_menu i {
   color: #f12b1d;
 }
-#case_law_menu {
+#case_law_menu,
+#case_law_menu i {
   /* color: #0e4d7e; */
   color: var(--color-sub);
+}
+#question_mark__container {
+  height: 600px;
+  width: 375px;
+  position: relative;
+}
+#question_mark__container img {
+  position: absolute;
+}
+#img_pure {
+  width: 14.4em;
+  top: 1em;
+  left: 0;
+}
+#img_conflict {
+  width: 12em;
+  top: 1.2em;
+  right: 0;
+}
+#img_action {
+  width: 13.2em;
+  left: 6.7em;
+  top: 14em;
+}
+#img_case_law {
+  width: 10em;
+  top: 29em;
+  left: 7em;
 }
 #container {
   height: auto;

@@ -3,7 +3,7 @@ const search = document.getElementById("search");
 function searcher() {
   let search = document.getElementById("search").value.toLowerCase();
   let content_box = document.getElementsByClassName("content_box");
-  console.log(search);
+  // console.log(search);
 
   for (let i = 0; i < content_box.length; i++) {
     if (!content_box[i].classList.contains("hide")) {
