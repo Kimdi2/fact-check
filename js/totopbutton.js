@@ -1,8 +1,6 @@
 const toTopBtn = document.querySelector(".to-top-btn");
 
 function scrollFunction() {
-  // console.log(document.body.scrollTop);
-  // console.log(document.documentElement.scrollTop);
   if (document.documentElement.scrollTop > 50) {
     toTopBtn.style.display = "block";
   } else {
@@ -12,11 +10,16 @@ function scrollFunction() {
 
 function moveToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
+  //
+  $("#search-box").css({ height: "440px" });
+  $(".search_box").removeAttr("style");
+  $("#container").removeAttr("style");
+  $("#question_mark__container").show(300);
 }
 function moveToSearchbar() {
-  window.scrollTo({ top: 401, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-scrollFunction();
-window.onscroll = () => scrollFunction();
+// scrollFunction();
+// window.onscroll = () => scrollFunction();
 toTopBtn.addEventListener("click", moveToTop);

@@ -4,7 +4,6 @@ const search = document.getElementById("search");
 function searcher() {
   let search = document.getElementById("search").value.toLowerCase();
   let content_box = document.getElementsByClassName("content_box");
-  // console.log(search);
   for (let i = 0; i < content_box.length; i++) {
     if (!content_box[i].classList.contains("hide")) {
       let question = content_box[i].getElementsByClassName("question");
@@ -22,27 +21,23 @@ function searcher() {
   }
 }
 function hideTopbar() {
-  console.log($(this));
   $("#search-box").css({ height: "0" });
   $(".search_box").css({ bottom: "-150px" });
   $("#container").css({ "margin-top": "170px" });
   $("#question_mark__container").hide(300);
-  $("#empty_box").show(300);
 }
-function showTopbar() {
-  console.log($(this));
-  $("#search-box").css({ height: "440px" });
-  $(".search_box").removeAttr("style");
-  $("#container").removeAttr("style");
-  $("#question_mark__container").show(300);
-  $("#empty_box").hide(300);
-  moveToSearchbar();
-}
+// function showTopbar() {
+//   $("#search-box").css({ height: "440px" });
+//   $(".search_box").removeAttr("style");
+//   $("#container").removeAttr("style");
+//   $("#question_mark__container").show(300);
+//   moveToTop();
+// }
 
 $(window).scroll(function () {
   let height = $("body").height();
   let scrollTop = $(window).scrollTop();
-  if (scrollTop > 400) {
+  if (scrollTop > 0) {
     $("#search").css({ position: "fixed", top: "10px", bottom: "auto" });
     $(".menu_list").css({ position: "fixed", top: "80px" });
     $("#empty_box").show();
@@ -53,7 +48,6 @@ $(window).scroll(function () {
   }
 });
 
-search.addEventListener("focus", hideTopbar);
-search.addEventListener("blur", showTopbar);
-search.addEventListener("click", moveToTop);
+search.addEventListener("click", moveToSearchbar);
+search.addEventListener("click", hideTopbar);
 search.addEventListener("keyup", searcher);
