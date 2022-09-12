@@ -12,8 +12,9 @@ function scrollFunction() {
 
 function moveToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
-  // document.body.scrollTop = 0;
-  // document.documentElement.scrollTop = 0;
+}
+function moveToSearchbar() {
+  window.scrollTo({ top: 400, behavior: "smooth" });
 }
 
 scrollFunction();

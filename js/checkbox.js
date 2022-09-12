@@ -42,3 +42,4 @@ function is_checked() {
 $("input[type='checkbox']").on("click", is_checked);
 $("input[type='checkbox']").on("click", checkbox_function);
 $("input[type='checkbox']").on("click", searcher);
+$("input[type='checkbox']").on("click", moveToSearchbar);
