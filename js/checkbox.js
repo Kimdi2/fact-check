@@ -38,6 +38,28 @@ function is_checked() {
   }
 }
 
+// function is_clicked() {
+//   const input = $("input[type='checkbox']").parent().children("i");
+//   const content_box = $(".content_box");
+//   // input.toggle(500);
+//   for (i = 0; i < input.length; i++) {
+//     if (!input.parent()[i].classList.contains("menu__checked")) {
+//       input.parent()[i].classList.add("menu__checked");
+//     }
+//   }
+//   for (i = 0; i < content_box.length; i++) {
+//     content_box[i].classList.add("hide");
+//     if (content_box[i].classList.contains("pure")) {
+//       content_box[i].classList.remove("hide");
+//     }
+//   }
+// }
+
+// $("#img_pure").on("click", is_clicked);
+// $("#img_conflict").on("click", is_clicked);
+// $("#img_action").on("click", is_clicked);
+// $("#img_case_law").on("click", is_clicked);
+
 // $(".menu").on("click", is_checked);
 $("input[type='checkbox']").on("click", is_checked);
 $("input[type='checkbox']").on("click", checkbox_function);
