@@ -4,14 +4,24 @@ body {
   flex-direction: column;
   align-items: center;
 }
-#search-box {
+#empty_box {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
   height: 120px;
+  display: none;
+}
+#search-box {
+  height: 440px;
   background-color: var(--color-main);
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
+  position: relative;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 .top-bar__title {
   position: absolute;
@@ -25,25 +35,28 @@ body {
   box-sizing: border-box;
   position: absolute;
   bottom: -25px;
-  right: 10px;
   padding: 20px;
   border-radius: 25px;
-  width: 78%;
+  width: 98%;
   border: none;
-  box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.3);
+  /* position: fixed; */
+  /* top: 0; */
 }
 #search::placeholder {
   color: var(--color-main);
   font-weight: 600;
 }
 .menu_list {
-  margin-top: 40px;
+  margin-top: 480px;
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: space-around;
+  /* position: fixed; */
+  /* margin-top: 70px; */
   /* checkbox menu hide */
-  display: none;
+  /* display: none; */
 }
 .menu {
   padding: 1vw 0;
@@ -79,7 +92,7 @@ body {
 }
 #action_menu,
 #action_menu i {
-  color: #0085cb;
+  color: #0097da;
 }
 #conflict_menu,
 #conflict_menu i {
@@ -91,31 +104,34 @@ body {
   color: #05a699;
 }
 #question_mark__container {
-  left: 0;
-  position: fixed;
+  /* left: 0; */
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  /* position: relative; */
 }
 #question_mark__container img {
   position: absolute;
 }
 #img_pure {
-  width: 3.25em;
-  top: 0.14em;
-  left: 0.23em;
+  width: 7em;
+  top: 5em;
+  left: 0.5em;
 }
 #img_conflict {
-  width: 2.75em;
-  top: 0.15em;
-  left: 2.8em;
+  width: 5.8em;
+  top: 5.1em;
+  left: 6em;
 }
 #img_action {
-  width: 3em;
-  left: 1.8em;
-  top: 3em;
+  width: 6.4em;
+  top: 11.2em;
+  left: 3.7em;
 }
 #img_case_law {
-  width: 2.5em;
-  top: 6.3em;
-  left: 1.75em;
+  width: 5.3em;
+  top: 19em;
+  left: 3.8em;
 }
 #container {
   height: auto;
@@ -123,13 +139,13 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 120px 0 30px 0;
+  margin: 110px 0 30px 0;
 }
 .content_box {
-  /* border-radius: 10px; */
+  border-radius: 10px;
   width: 100%;
   /* background-color: var(--color-main); */
-  /* margin-bottom: 20px; */
+  margin: 0.25em 0.5em;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -138,7 +154,7 @@ body {
   /* box-shadow: 0 50px 100px rgb(253, 167, 1); */
 }
 .action {
-  box-shadow: 0 0px 20px -5px #0085cb inset;
+  box-shadow: 0 0px 20px -5px #0097da inset;
   /* box-shadow: 0 15px 35px rgb(14, 77, 126); */
 }
 .conflict {
