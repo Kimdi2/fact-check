@@ -18,9 +18,22 @@ function searcher() {
       if (search === "") {
         $(".content_box").removeAttr("style");
       }
-      window.scrollTo({ top: 401 });
     }
   }
+}
+function hideTopbar() {
+  console.log($(this));
+  $("#search-box").css({ height: "0px" });
+  $("#search").css({ position: "inherit" });
+  $(".menu_list").css({ "margin-top": "80px" });
+  $("#empty_box").show();
+}
+function showTopbar() {
+  console.log($(this));
+  $("#search-box").css({ height: "440px" });
+  $("#search").removeAttr("style");
+  $(".menu_list").removeAttr("style");
+  $("#empty_box").hide();
 }
 
 $(window).scroll(function () {
@@ -37,5 +50,7 @@ $(window).scroll(function () {
   }
 });
 
-search.addEventListener("click", moveToSearchbar);
+// search.addEventListener("focus", hideTopbar);
+// search.addEventListener("blur", showTopbar);
+// search.addEventListener("click", moveToTop);
 search.addEventListener("keyup", searcher);

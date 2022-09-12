@@ -41,8 +41,6 @@ body {
   width: 98%;
   border: none;
   box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.3);
-  /* position: fixed; */
-  /* top: 0; */
 }
 #search::placeholder {
   color: var(--color-main);
