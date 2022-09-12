@@ -11,7 +11,8 @@ function scrollFunction() {
 function moveToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
   //
-  $("#search-box").css({ height: "440px" });
+  // $("#search-box").css({ height: "440px" });
+  $("#search-box").removeAttr("style");
   $(".search_box").removeAttr("style");
   $("#container").removeAttr("style");
   $("#question_mark__container").show(300);
