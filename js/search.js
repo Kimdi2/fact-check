@@ -18,6 +18,7 @@ function searcher() {
       if (search === "") {
         $(".content_box").removeAttr("style");
       }
+      window.scrollTo({ top: 401 });
     }
   }
 }
@@ -36,5 +37,5 @@ $(window).scroll(function () {
   }
 });
 
-search.addEventListener("click", moveToTop);
+search.addEventListener("click", moveToSearchbar);
 search.addEventListener("keyup", searcher);

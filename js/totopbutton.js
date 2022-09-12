@@ -14,7 +14,7 @@ function moveToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 function moveToSearchbar() {
-  window.scrollTo({ top: 400, behavior: "smooth" });
+  window.scrollTo({ top: 401, behavior: "smooth" });
 }
 
 scrollFunction();

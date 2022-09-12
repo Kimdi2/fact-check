@@ -2,11 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>청렴 팩트 체크 - 공무원 행동강령</title>
+    <title>청렴 팩트 체크!!</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalabel=0"
+    />
     <link rel="stylesheet" href="../css/init.css" />
-    <link rel="stylesheet" href="../css//main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -14,27 +17,49 @@
     ></script>
   </head>
 
-  <body>
+  <body class="main-body">
     <header id="search-box">
-      <a href="../index.html" class="top-bar__title">청렴 팩트 체크</a>
-      <input
-        type="text"
-        id="search"
-        onkeyup="searcher()"
-        placeholder="검색어를 입력해주세요."
-      />
+      <div id="empty_box"></div>
+      <a href="index.html" class="top-bar__title">청렴 팩트 체크</a>
+      <div id="question_mark__container">
+        <label for="pure--checkbox">
+          <img src="../img/pure.png" id="img_pure" alt="" />
+        </label>
+        <label for="conflict--checkbox">
+          <img src="../img/conflict.png" id="img_conflict" alt="" />
+        </label>
+        <label for="action--checkbox">
+          <img src="../img/action.png" id="img_action" alt="" />
+        </label>
+        <label for="case_law--checkbox">
+          <img src="../img/case_law.png" id="img_case_law" alt="" />
+        </label>
+      </div>
+      <input type="text" id="search" placeholder="검색어를 입력해주세요." />
+      <div class="menu_list">
+        <label class="menu" id="pure_menu" for="pure--checkbox">
+          <input type="checkbox" id="pure--checkbox" />
+          <i class="fa-solid fa-check"></i>&nbsp;&nbsp;청탁금지법
+        </label>
+        <label class="menu" id="conflict_menu" for="conflict--checkbox">
+          <input type="checkbox" id="conflict--checkbox" />
+          <i class="fa-solid fa-check"></i>&nbsp;&nbsp;이해충돌방지법
+        </label>
+        <label class="menu" id="action_menu" for="action--checkbox">
+          <input type="checkbox" id="action--checkbox" />
+          <i class="fa-solid fa-check"></i>&nbsp;&nbsp;공직자 행동강령
+        </label>
+        <label class="menu" id="case_law_menu" for="case_law--checkbox">
+          <input type="checkbox" id="case_law--checkbox" />
+          <i class="fa-solid fa-check"></i>&nbsp;&nbsp;판례
+        </label>
+      </div>
     </header>
     <!-- is2528@korea.kr 김인숙주무관님 메일주소-->
     <!-- content_box 뒤에 오는 class
     1. 공무원 행동강령: action
     2. 청탁금지법(청렴): pure
     3. 이해충돌: conflict -->
-    <div class="menu_list">
-      <a class="menu" id="pure_menu" href="pure.html">청탁금지법</a>
-      <a class="menu" id="action_menu" href="action.html">공무원 행동강령</a>
-      <a class="menu" id="conflict_menu" href="conflict.html">이해충돌방지법</a>
-      <a class="menu" id="case_law_menu" href="caselaw.html">판례</a>
-    </div>
 
     <div id="container">
       <div class="content_box action">
