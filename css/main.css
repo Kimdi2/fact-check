@@ -32,6 +32,7 @@ body {
 }
 
 #search {
+  font-size: 18px;
   box-sizing: border-box;
   position: absolute;
   bottom: -25px;
