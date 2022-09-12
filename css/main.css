@@ -8,7 +8,7 @@ body {
   height: 120px;
   background-color: var(--color-main);
   width: 100%;
-  position: relative;
+  position: fixed;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -25,9 +25,10 @@ body {
   box-sizing: border-box;
   position: absolute;
   bottom: -25px;
+  right: 10px;
   padding: 20px;
   border-radius: 25px;
-  width: 90%;
+  width: 78%;
   border: none;
   box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.1);
 }
@@ -41,6 +42,8 @@ body {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  /* checkbox menu hide */
+  display: none;
 }
 .menu {
   padding: 1vw 0;
@@ -76,44 +79,43 @@ body {
 }
 #action_menu,
 #action_menu i {
-  color: #6cbcbe;
+  color: #0085cb;
 }
 #conflict_menu,
 #conflict_menu i {
-  color: #f12b1d;
+  color: #79b628;
 }
 #case_law_menu,
 #case_law_menu i {
   /* color: #0e4d7e; */
-  color: var(--color-sub);
+  color: #05a699;
 }
 #question_mark__container {
-  height: 600px;
-  width: 375px;
-  position: relative;
+  left: 0;
+  position: fixed;
 }
 #question_mark__container img {
   position: absolute;
 }
 #img_pure {
-  width: 14.4em;
-  top: 1em;
-  left: 0;
+  width: 3.25em;
+  top: 0.14em;
+  left: 0.23em;
 }
 #img_conflict {
-  width: 12em;
-  top: 1.2em;
-  right: 0;
+  width: 2.75em;
+  top: 0.15em;
+  left: 2.8em;
 }
 #img_action {
-  width: 13.2em;
-  left: 6.7em;
-  top: 14em;
+  width: 3em;
+  left: 1.8em;
+  top: 3em;
 }
 #img_case_law {
-  width: 10em;
-  top: 29em;
-  left: 7em;
+  width: 2.5em;
+  top: 6.3em;
+  left: 1.75em;
 }
 #container {
   height: auto;
@@ -121,7 +123,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 30px 0;
+  margin: 120px 0 30px 0;
 }
 .content_box {
   /* border-radius: 10px; */
@@ -136,15 +138,15 @@ body {
   /* box-shadow: 0 50px 100px rgb(253, 167, 1); */
 }
 .action {
-  box-shadow: 0 0px 20px -5px #6cbcbe inset;
+  box-shadow: 0 0px 20px -5px #0085cb inset;
   /* box-shadow: 0 15px 35px rgb(14, 77, 126); */
 }
 .conflict {
-  box-shadow: 0 0px 15px -10px #f12b1d inset;
+  box-shadow: 0 0px 15px -10px #79b628 inset;
   /* box-shadow: 0 5px 15px rgb(241, 43, 29); */
 }
 .case_law {
-  box-shadow: 0 0px 15px -10px black inset;
+  box-shadow: 0 0px 15px -10px #05a699 inset;
 }
 .content_box * {
   padding: 20px 0;
