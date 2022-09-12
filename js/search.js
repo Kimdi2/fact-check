@@ -1,11 +1,6 @@
 const search = document.getElementById("search");
 // 검색 입력할 시 다른 페이지 넘어가도 기존 검색어 유지
 
-function moveToSearchbar() {
-  let scrollTop = $(window).scrollTop();
-  window.scrollTo({ top: 400, behavior: "smooth" });
-}
-
 function searcher() {
   let search = document.getElementById("search").value.toLowerCase();
   let content_box = document.getElementsByClassName("content_box");
@@ -41,5 +36,5 @@ $(window).scroll(function () {
   }
 });
 
-search.addEventListener("click", moveToSearchbar);
+search.addEventListener("click", moveToTop);
 search.addEventListener("keyup", searcher);
