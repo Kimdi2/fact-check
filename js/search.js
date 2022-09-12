@@ -35,16 +35,28 @@ function hideTopbar() {
 // }
 
 $(window).scroll(function () {
-  let height = $("body").height();
   let scrollTop = $(window).scrollTop();
-  if (scrollTop > 0) {
-    $("#search").css({ position: "fixed", top: "10px", bottom: "auto" });
-    $(".menu_list").css({ position: "fixed", top: "80px" });
-    $("#empty_box").show();
+  const searchBoxHieght = $("#search-box").prop("style").height;
+  if (searchBoxHieght) {
+    if (scrollTop > 0) {
+      $("#search").css({ position: "fixed", top: "10px", bottom: "auto" });
+      $(".menu_list").css({ position: "fixed", top: "80px" });
+      $("#empty_box").show();
+    } else {
+      $("#search").removeAttr("style");
+      $(".menu_list").removeAttr("style");
+      $("#empty_box").hide();
+    }
   } else {
-    $("#search").removeAttr("style");
-    $(".menu_list").removeAttr("style");
-    $("#empty_box").hide();
+    if (scrollTop > 400) {
+      $("#search").css({ position: "fixed", top: "10px", bottom: "auto" });
+      $(".menu_list").css({ position: "fixed", top: "80px" });
+      $("#empty_box").show();
+    } else {
+      $("#search").removeAttr("style");
+      $(".menu_list").removeAttr("style");
+      $("#empty_box").hide();
+    }
   }
 });
 
