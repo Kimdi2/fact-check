@@ -23,17 +23,20 @@ function searcher() {
 }
 function hideTopbar() {
   console.log($(this));
-  $("#search-box").css({ height: "0px" });
-  $("#search").css({ position: "inherit" });
-  $(".menu_list").css({ "margin-top": "80px" });
-  $("#empty_box").show();
+  $("#search-box").css({ height: "0" });
+  $(".search_box").css({ bottom: "-150px" });
+  $("#container").css({ "margin-top": "170px" });
+  $("#question_mark__container").hide(300);
+  $("#empty_box").show(300);
 }
 function showTopbar() {
   console.log($(this));
   $("#search-box").css({ height: "440px" });
-  $("#search").removeAttr("style");
-  $(".menu_list").removeAttr("style");
-  $("#empty_box").hide();
+  $(".search_box").removeAttr("style");
+  $("#container").removeAttr("style");
+  $("#question_mark__container").show(300);
+  $("#empty_box").hide(300);
+  moveToSearchbar();
 }
 
 $(window).scroll(function () {
@@ -41,7 +44,7 @@ $(window).scroll(function () {
   let scrollTop = $(window).scrollTop();
   if (scrollTop > 400) {
     $("#search").css({ position: "fixed", top: "10px", bottom: "auto" });
-    $(".menu_list").css({ position: "fixed", "margin-top": "80px" });
+    $(".menu_list").css({ position: "fixed", top: "80px" });
     $("#empty_box").show();
   } else {
     $("#search").removeAttr("style");
@@ -50,7 +53,7 @@ $(window).scroll(function () {
   }
 });
 
-// search.addEventListener("focus", hideTopbar);
-// search.addEventListener("blur", showTopbar);
-// search.addEventListener("click", moveToTop);
+search.addEventListener("focus", hideTopbar);
+search.addEventListener("blur", showTopbar);
+search.addEventListener("click", moveToTop);
 search.addEventListener("keyup", searcher);
