@@ -22,6 +22,7 @@ body {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  transition: all 0.5s ease-in-out;
 }
 .top-bar__title {
   position: absolute;
@@ -30,12 +31,18 @@ body {
   text-decoration: none;
   font-size: 1.5em;
 }
-
+.search_box {
+  width: 100%;
+  position: absolute;
+  bottom: -90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 #search {
   font-size: 18px;
   box-sizing: border-box;
-  position: absolute;
-  bottom: -25px;
   padding: 20px;
   border-radius: 25px;
   width: 98%;
@@ -47,7 +54,7 @@ body {
   font-weight: 600;
 }
 .menu_list {
-  margin-top: 480px;
+  /* margin-top: 480px; */
   width: 100%;
   text-align: center;
   display: flex;
@@ -67,7 +74,7 @@ body {
   height: 30px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   position: relative;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 15px 30px -12px inset,
     rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
@@ -105,10 +112,10 @@ body {
 }
 #question_mark__container {
   /* left: 0; */
-  position: absolute;
+  /* position: absolute; */
   width: 200px;
-  height: 300px;
-  /* position: relative; */
+  height: 380px;
+  position: relative;
 }
 #question_mark__container img {
   position: absolute;
