@@ -4,13 +4,13 @@
   "description": "made by 청렴동아리",
   "scope": ".",
   "start_url": "./",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "theme_color": "#0097da",
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "img/ss.png",
+      "src": "img/question_mark.png",
       "sizes": "512x512",
       "type": "image/png"
     }
