@@ -1,18 +1,18 @@
 {
-  "name": "안녕하세요! PWA by JS",
-  "short_name": "PWA by JS",
-  "description": "PWA start program",
+  "name": "경기도포천교육청",
+  "short_name": "Fact CHECK",
+  "description": "made by 청렴동아리",
   "scope": ".",
   "start_url": "./",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "#ffffff",
+  "theme_color": "#0097da",
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "img/question_mark.jpg",
+      "src": "img/ss.png",
       "sizes": "512x512",
-      "type": "image/jpg"
+      "type": "image/png"
     }
   ]
 }

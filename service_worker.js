@@ -4,7 +4,7 @@ const aFilesToCache = [
   "./",
   "./index.html",
   "./manifest.json",
-  "./img/question_mark.jpg",
+  "./img/ss.png",
   "./img/img1.png",
 ];
 
