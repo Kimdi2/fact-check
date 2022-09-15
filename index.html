@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <title>청렴 팩트 체크!!</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 매니페스트 파일 연결, 상태 표시줄 색상 변경 -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#0097da" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalabel=0"
     />
+    <!-- <link rel="shortcut icon" href="images/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="iamges/icons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="iamges/icons/favicon-32x32.png"
+    /> -->
     <link rel="stylesheet" href="css/init.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script
@@ -23180,5 +23196,15 @@
     <script src="js/search.js"></script>
     <script src="js/checkbox.js"></script>
     <script src="js/disppearsymbol.js"></script>
+    <!-- 1. 서비스 워커 등록 -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./service_worker.js")
+          .then(function () {
+            console.log("서비스 워커가 등록됨!");
+          });
+      }
+    </script>
   </body>
 </html>
