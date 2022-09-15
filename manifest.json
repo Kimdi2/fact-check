@@ -10,7 +10,7 @@
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "img/question_mark.png",
+      "src": "img/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
