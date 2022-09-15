@@ -1,4 +1,4 @@
-const CACHE_NAME = "fact-check-v1"; // 캐시제목 선언
+const CACHE_NAME = "fact-check-v2"; // 캐시제목 선언
 const CACHE_FILE = [
   // 캐시할 파일 선언
   "./",
@@ -38,7 +38,7 @@ self.addEventListener("activate", (event) => {
     caches.keys().then(function (cacheNames) {
       return Promise.all(
         cacheNames.map(function (cacheName) {
-          if (CACHE_NAME !== cacheName && cacheName.startsWith("facf-check")) {
+          if (CACHE_NAME !== cacheName && cacheName.startsWith("fact-check")) {
             return caches.delete(cacheName);
           }
         })
