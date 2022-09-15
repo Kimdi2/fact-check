@@ -6,6 +6,7 @@ const aFilesToCache = [
   "./manifest.json",
   "./img/ss.png",
   "./img/img1.png",
+  "./img/question_mark.png",
 ];
 
 // 2.서비스워커를 설치하고 캐시를 저장함
