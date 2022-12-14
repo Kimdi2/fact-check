@@ -1,4 +1,4 @@
-const CACHE_NAME = "fact-check-v4"; // 캐시제목 선언
+const CACHE_NAME = "fact-check-v4.2"; // 캐시제목 선언
 const CACHE_FILE = [
     // 캐시할 파일 선언
     "./",
